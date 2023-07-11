@@ -6,6 +6,7 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="../es1_landingPage/styless.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         
 
@@ -19,7 +20,9 @@
     <div class="menu">
         <a href="#backend">Sviluppo Backend</a>   <!--sono gli id i cancelletti-->
         <a href="#frontend">Sviluppo Frontend</a>
-        <a href="#database">Database</a>
+        <a href="#database">Gestione Database</a>
+        <a href="oop">Object Oriented</a>
+        <a href="Contact">Contatti</a>
     </div>
     <div class="container">
         <div class="section">
@@ -73,6 +76,26 @@
                 <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc</p>
             </div>
         </div>
+            <div class="section" id="oop">
+                <div class="card">
+                    <img src="../img/for-designers.svg" alt="Object-oriented-programming">
+                    <h2>Programmazione Orientata agli oggetti</h2>
+                    <p>Competenze in Java, C++, Python, ecc</p>
+                </div>
+            </div>
+            <div class="section" id="contact">
+                <h2>Contattami</h2>
+                <form action="/submit_form" method="POST">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Messaggio</label>
+                    <textarea name="message" id="message" required></textarea>
+                    <input type="submit" value="Invia">
+                </form>
+
+            </div>
     </div>
 </body>
 </html>
