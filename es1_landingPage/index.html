@@ -11,6 +11,19 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        .menu {
+            background-color: #333;
+            overflow: hidden;   /*nasconde eventuali contenuti che fuoriescono dai limiti di un elemento. */
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+
+        .menu a {              /*tutti i link <a> all'interno di un elemento con la classe "menu" */
+            color: #fff;
+            text-decoration: none;
+        }
+
         .container{
             display: flex;
             flex-wrap: wrap;
@@ -52,6 +65,11 @@
     </style>
 </head>
 <body>
+    <div class="menu">
+        <a href="#backend">Sviluppo Backend</a>   <!--sono gli id i cancelletti-->
+        <a href="#frontend">Sviluppo Frontend</a>
+        <a href="#database">Database</a>
+    </div>
     <div class="container">
         <div class="section">
             <div class="card">
