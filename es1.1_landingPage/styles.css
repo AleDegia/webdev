@@ -1,0 +1,96 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;   /*se abbiamo importato il fonto va messo tra ' ' */
+}
+.uno{
+    display: flex;
+    color: rgb(3, 6, 9);
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px #dedede;
+}
+.uno h1{
+    font-size: 2.5em;
+}
+.uno p{
+    font-size: 1.5 em;
+}
+@media screen and (min-width: 600px){
+    .section{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 900px){       /*se lo schermo è minore di 900px divida la section in 3 frazioni*/
+    .section{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.menu{
+    background-color: black;
+    /*display: flex;*/
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    font-size: 17px;
+    padding: 14px 16px ;
+
+}
+.container{
+    justify-content: center; /* l'insieme di display:flex e justify-content: center, incolonna le card al centro */
+    display: grid;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.section{
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px;
+    grid-column:auto;
+    
+    
+}
+.card{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+
+    box-shadow: 6px 0 rgb(243, 239, 239), 0 6px 0px 0px rgb(243, 239, 239); /* Border right */
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+#logo{
+    padding-left: 200px;
+}
+.ciao img{
+    padding-left: 200px;
+}
+#wewe{
+    padding-right: 200px;
+}
+.boximg {
+    position: relative;
+}
+.boxtesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
