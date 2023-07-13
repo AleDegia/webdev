@@ -17,15 +17,40 @@
         <h1>Il Mio Sito Full Stack</h1>
         <p>bla bla bla</p>
     </div>
+    
     <div class="menu">
+        
         <a href="#backend">Sviluppo Backend</a>   <!--sono gli id i cancelletti-->
         <a href="#frontend">Sviluppo Frontend</a>
         <a href="#database">Gestione Database</a>
-        <a href="oop">Object Oriented</a>
-        <a href="Contact">Contatti</a>
+        <a href="#oop">Object Oriented</a>
+        <a href="#Contact">Contatti</a>
+    </div>
+    <div class="section" id="skills">
+        <h2>Le mie competenze</h2>
+        <div class="skill">
+            <p>HTML</p>
+            <div class="progress">
+                <div class="progress_bar" style="width: 90%"></div>
+            </div>
+        </div>
+        <h2>Le mie competenze</h2>
+        <div class="skill">
+            <p>CSS</p>
+            <div class="progress">
+                <div class="progress_bar" style="width: 90%"></div>
+            </div>
+        </div>
+        <h2>Le mie competenze</h2>
+        <div class="skill">
+            <p>JAVASCRIPT</p>
+            <div class="progress">
+                <div class="progress_bar" style="width: 90%"></div>
+            </div>
+        </div>
     </div>
     <div class="container">
-        <div class="section">
+        <div class="section" id="backend">
             <div class="card">
                 <img src="../img/for-business.svg" alt="Backend Development">
                 <h2>Sviluppo Backend</h2>
@@ -42,7 +67,7 @@
                 <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc</p>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id="frontend">
             <div class="card">
                 <img src="../img/for-business.svg" alt="Backend Development">
                 <h2>Sviluppo Backend</h2>
@@ -59,7 +84,7 @@
                 <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc</p>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id="database">
             <div class="card">
                 <img src="../img/for-business.svg" alt="Backend Development">
                 <h2>Sviluppo Backend</h2>
@@ -76,13 +101,23 @@
                 <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc</p>
             </div>
         </div>
-            <div class="section" id="oop">
-                <div class="card">
-                    <img src="../img/for-designers.svg" alt="Object-oriented-programming">
-                    <h2>Programmazione Orientata agli oggetti</h2>
-                    <p>Competenze in Java, C++, Python, ecc</p>
-                </div>
+        <div class="section" id="oop">
+            <div class="card">
+                <img src="../img/for-business.svg" alt="Object-Oriented Programming">
+                <h2>Programmazione Orientata agli Oggetti</h2>
+                <p>Competenze in Java, C++, Python, ecc.</p>
             </div>
+            <div class="card">
+                <img src="../img/for-business.svg" alt="Object-Oriented Programming">
+                <h2>Programmazione Orientata agli Oggetti</h2>
+                <p>Competenze in Java, C++, Python, ecc.</p>
+            </div>
+            <div class="card">
+                <img src="../img/for-marketers.svg" alt="Object-Oriented Programming">
+                <h2>Programmazione Orientata agli Oggetti</h2>
+                <p>Competenze in Java, C++, Python, ecc.</p>
+            </div>
+        </div>
             <div class="section" id="contact">
                 <h2>Contattami</h2>
                 <form action="/submit_form" method="POST">
@@ -90,12 +125,35 @@
                     <input type="text" id="name" name="name" required>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-                    <label for="message">Messaggio</label>
-                    <textarea name="message" id="message" required></textarea>
+                    <label for="message">Messaggio:</label>
+                    <textarea id="message" name="message" required></textarea>
                     <input type="submit" value="Invia">
                 </form>
-
             </div>
+            <div class="section" id="skills">
+                <h2>Le mie competenze</h2>
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="progress">
+                        <div class="progress_bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <h2>Le mie competenze</h2>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress">
+                        <div class="progress_bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <h2>Le mie competenze</h2>
+                <div class="skill">
+                    <p>JAVASCRIPT</p>
+                    <div class="progress">
+                        <div class="progress_bar" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

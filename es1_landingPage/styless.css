@@ -8,8 +8,8 @@ body{
 
 .menu {
     background-color: #333;
-    overflow: hidden;   /*nasconde eventuali contenuti che fuoriescono dai limiti di un elemento. */
-    display: flex;
+    /*overflow: hidden;   /*nasconde eventuali contenuti che fuoriescono dai limiti di un elemento. */
+    display: flex;   /* fa si che gli elementi dentro ad un contenitore occupino interamente lo spazio del contenitore*/
     justify-content: space-around;
     padding: 20px 0;
 }
@@ -90,13 +90,13 @@ body{
 
 .hero{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;   /*mette al centro del div in verticale*/
+    align-items: center;    /*mette al centro del div in orizzontale*/
     height: 70vh;
     color: #fff;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
-    text-align: center;
-    flex-direction: column;
+    /*text-align: center;*/
+    flex-direction: column;     /*dico di incolonnare i contenuti all'interno del div*/
 }
 
 .hero h1{
@@ -109,7 +109,7 @@ body{
 
 @media screen and (min-width: 600px){
     .section{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;   
     }
 }
 
@@ -119,3 +119,18 @@ body{
     }
 }
 
+.skill{
+    margin:20px 0;
+}
+
+.progress{
+    width:100%;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.progress_bar{
+    height: 20px;
+    background-color: #feb47b;
+    border-radius:5px;
+}
