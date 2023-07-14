@@ -9,9 +9,11 @@ body{
     background-color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
-    height: 280px;
+    height: 530px;
     flex-direction: column;
     box-shadow: 10px 10px 5px #dedede;
+    background-image: url("https://it.freepik.com/foto-premium/una-mappa-del-mondo-digitale-e-mostrata-su-uno-sfondo-scuro_40241616.htm");
+    background-size:100% 100%;
 }
 .uno h1{
     font-size: 2.5em;
@@ -33,7 +35,7 @@ body{
     background-color: black;
     /*display: flex;*/
     justify-content: space-around;
-    overflow: hidden;
+    /*overflow: hidden;*/
     padding: 20px 0;
 }
 .menu a{
@@ -83,7 +85,7 @@ body{
     padding-left: 200px;
 }
 #wewe{
-    padding-right: 200px;
+    margin-right: 200px;
 }
 .boximg {
     position: relative;
@@ -93,4 +95,91 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.progress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.progress_bar {
+    width: 0; /* valore di partenza */
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: width 2s; /* durata dell'animazione */
+}
+
+.progress_bar span {
+    position: absolute;
+    right: 10px;
+}
+
+.preso{
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 20%;
+    text-align: center;
+}
+
+.competenze{
+    display: flex;
+    position: relative;
+    margin-top: 30px
+
+}
+
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a::after{
+    content: "";
+    position:absolute;
+    background-color: #4caf50;
+    height: 3px;
+    width:0;
+    left: 0;
+    bottom: 3px;
+   transition: 0.6s;
+   border-radius: 10px 10px 10px 10px; 
+   
+}
+
+a:hover::after {  /* Cambiato il selettore per includere "::after" */
+    width: 100%;
+    
+}
+
+a:hover{
+    
+    color: rgb(245, 239, 239);
+    position: relative;
+    transform : scale(1.1);
+    transition: 0.6s;
+    
+}
+
+
+.preso img:hover {
+    /*transform: rotate(360deg);
+    transition: 0.9s;*/
+    scroll-behavior: smooth;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
 }
