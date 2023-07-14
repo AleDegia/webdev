@@ -1,7 +1,13 @@
+html:hover {
+    scroll-behavior: smooth;
+}
+
 body{
     margin:0;
     padding:0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;   /*se abbiamo importato il fonto va messo tra ' ' */
+    
+
 }
 .uno{
     display: flex;
@@ -14,6 +20,7 @@ body{
     box-shadow: 10px 10px 5px #dedede;
     background-image: url("https://it.freepik.com/foto-premium/una-mappa-del-mondo-digitale-e-mostrata-su-uno-sfondo-scuro_40241616.htm");
     background-size:100% 100%;
+    
 }
 .uno h1{
     font-size: 2.5em;
@@ -21,22 +28,60 @@ body{
 .uno p{
     font-size: 1.5 em;
 }
-@media screen and (min-width: 600px){
+@media screen and (max-width: 943px){
     .section{
         grid-template-columns: 1fr 1fr;
+        
     }
+
+    #wewe{
+        margin-right:-200px;
+    }
+    .sezioni_navbar{
+        position: fixed;
+       padding-left: 310px;
+       padding-right: 0;
+     
+       
+        
+        
+    }
+  .logo{
+    float: left;
+  }
+
 }
 @media screen and (min-width: 900px){       /*se lo schermo è minore di 900px divida la section in 3 frazioni*/
     .section{
         grid-template-columns: 1fr 1fr 1fr;
     }
+    
+    
 }
+
+@media screen and (min-width: 100px){       /*se lo schermo è minore di 100px applica le regole, divida la section in 3 frazioni*/
+    .section{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .competenze{
+        gap:20px;
+        position:absolute;
+    }
+
+    
+    
+    
+}
+
+
 .menu{
     background-color: black;
-    /*display: flex;*/
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+   
     /*overflow: hidden;*/
     padding: 20px 0;
+    
 }
 .menu a{
     color: aliceblue;
@@ -85,7 +130,7 @@ body{
     padding-left: 200px;
 }
 #wewe{
-    margin-right: 200px;
+    padding-right: 200px;
 }
 .boximg {
     position: relative;
@@ -136,7 +181,7 @@ body{
 .competenze{
     display: flex;
     position: relative;
-    margin-top: 30px
+    margin-top: 10px
 
 }
 
@@ -149,6 +194,7 @@ body{
 a::after{
     content: "";
     position:absolute;
+    color: #4caf50;
     background-color: #4caf50;
     height: 3px;
     width:0;
@@ -166,9 +212,9 @@ a:hover::after {  /* Cambiato il selettore per includere "::after" */
 
 a:hover{
     
-    color: rgb(245, 239, 239);
+    color: #4caf50;
     position: relative;
-    transform : scale(1.1);
+    
     transition: 0.6s;
     
 }
@@ -183,3 +229,30 @@ a:hover{
     animation-iteration-count: 1;
     animation-direction: reverse;
 }
+
+.immagine_html{
+    margin-top:20px;
+}
+
+.uno{
+    color: white;
+    font-family: 'Tektur', Arial, Helvetica, sans-serif;
+}
+
+.linguaggi2{
+    display: flex;
+    position: relative;
+}
+
+.preso{
+    transition: transform 0.3s ease-in-out;
+}
+
+.preso:hover{
+    transform: scale(1.15);
+}
+
+.logo{
+    margin-left:30px;
+}
+
